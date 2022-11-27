@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/7cff69e0d2.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm Mohd Haroon</h1>
+          <p>Software Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Mohd Haroon Ansari. I am a Software Developer. I am a
+              2022 Graduate from Thakur College of Engineering and Technology in
+              Computer Engineering.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span> C++ </span><br />Programming Language</li>
+                <li><span> HTML & CSS </span><br />Web Development</li>
+                <li><span> JAVASCRIPT </span><br />Web Development</li>
+                <li><span> SQL & MongoDB </span><br />Database Language</li>
+                <li>
+                  <span> React & NodeJS </span><br />Frontend & Backend
+                  Framework
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <!-- <ul>
+                <li><span> UI/UX </span><br />Designer Web/App Interfaces</li>
+                <li><span> Web Development </span><br />Web App Development</li>
+                <li>
+                  <span> App Development </span><br />Android/IOS App
+                  Development
+                </li>
+              </ul> -->
+              <ul>
+                <li><span> Fresher </span><br /></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span> 10th Board </span><br />75%</li>
+                <li><span> 12th Board </span><br />60%</li>
+                <li><span> BE Graduate</span><br />7.41CGPA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Web developers create and maintain websites. They are also
+              responsible for the site's technical aspects, such as its
+              performance and capacity, which are measures of a website's speed
+              and how much traffic the site can handle. In addition, web
+              developers may create content for the site.
+            </p>
+            <a
+              href="https://www.coursera.org/articles/web-developer"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              A UI/UX designer's job is to create user-friendly interfaces that
+              enable users to understand how to use complex technical products.
+              If you're passionate about the latest technology trends and
+              devices, you'll find great fulfillment in being involved in the
+              design process for the next hot gadget.
+            </p>
+            <a
+              href="https://usfbootcamps.com/blog/ui-ux-design/what-does-a-designer-do/"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+          <!-- <div>
+            <i class="fab fa-app-store"></i>
+
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae et voluptatibus fugit. Omnis a odio sunt iste similique
+              quisquam iusto ducimus optio mollitia, dolore, dignissimos atque
+              dolor corrupti tenetur quasi.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Instgram App</h3>
+              <p>
+                Created a clone of Instagram App and implemented CRUD operation
+                (create, update, read, delete) using MERN STACK MongoDB,
+                ExpressJS, ReactJS, NodeJS
+              </p>
+              <a
+                href="https://insta-clone45.herokuapp.com/signin"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>CryptoCurrency Tracker App</h3>
+              <p>
+                Created a Cryptocurrency Realtime Tracker app using ReactJS,
+                Axios, API
+              </p>
+              <a href="https://crypto-verse45.herokuapp.com/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                mollitia! Suscipit deleniti sint nobis. Ducimus quo dolorum nam
+                reiciendis dolor sequi blanditiis, soluta ipsum? Neque dicta
+                fuga necessitatibus in soluta.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div> -->
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me.</h1>
+            <p><i class="fa-solid fa-envelope"></i>ha84528@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8691949958</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100069497274139"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/dongeonmaster45" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mohd-haroon-ansari-b196a41b2/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                id=""
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="text"
+                name="Email"
+                id=""
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div>
+      <div class="copyright">
+        <p>Copyright &copy; haroon.eth</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwlZO1Rpzfn60txBCBhEVOtfmpISNRZSECFQWI-hvxaGSnhdmtB52Wf3AHkTbnkTp8cuw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
